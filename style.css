@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.form-group {
+  width: 100%;
+  margin: 8px 0;
+}
+
+.form-control {
+  width: 100%;
+  padding: 16px 12px;
+  border: none;
+  border-radius: 8px;
+  opacity: 0.8;
+}
+
+.form-control:focus {
+  outline: 2px solid #65dfc9;
+}
+
+.btn {
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.4));
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.text-primary {
+  color: #F56A68;
+}
+
+main {
+  height: 100vh;
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  /* background: #E6E7F0; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  width: 50%;
+}
+
+.glass {
+  background: #fff;
+  height: 100%;
+  width: 50%;
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.2));
+  backdrop-filter: blur(2rem);
+  border-radius: 2rem;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle1,
+.circle2 {
+  background: #fff;
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3));
+  height: 15rem;
+  width: 15rem;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle1 {
+  top: 5%;
+  right: 5%;
+}
+
+.circle2 {
+  bottom: 5%;
+  right: 30%;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image img {
+  width: 80%;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+
+.title-helper {
+  font-weight: 300;
+  margin: 12px 0 32px 0;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <main>
+    <section class="image">
+      <img src="./images/login-removebg.png" alt="login">
+    </section>
+    <section class="glass">
+      <div>
+        <h1 class="title text-center">Hello Again 👋</h1>
+        <p class="text-center my-3 title-helper">Welcome back you've been missed</p>
+
+        <form>
+          <div class="form-group">
+            <input type="text" name="username" id="username" placeholder="Username" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <input type="password" name="password" id="password" placeholder="Password" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <input type="submit" value="Login" class="btn btn-block">
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <div class="circle1"></div>
+  <div class="circle2"></div>
+
+  <script>
+    document.querySelector('form').addEventListener('submit', e => {
+      e.preventDefault();
+
+      const username = document.querySelector('#username').value;
+      const password = document.querySelector('#password').value;
+
+      if (username.length < 3) {
+        alert('Username must be at least 3 characters long');
+        return;
+      }
+
+      if (password.length < 6) {
+        alert('Password must be at least 6 characters long');
+        return;
+      }
+
+      window.location.href = `/welcome.html?username=${username}`;
+    })
+  </script>
+</body>
+
+</html>
